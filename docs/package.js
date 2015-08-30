@@ -183,6 +183,11 @@
       "content": "alert 'yolo'\n",
       "mode": "100644",
       "type": "blob"
+    },
+    "pixie.cson": {
+      "path": "pixie.cson",
+      "content": "version: \"0.0.0\"\n",
+      "mode": "100644"
     }
   },
   "distribution": {
@@ -190,11 +195,17 @@
       "path": "main",
       "content": "(function() {\n  alert('yolo');\n\n}).call(this);\n",
       "type": "blob"
+    },
+    "pixie": {
+      "path": "pixie",
+      "content": "module.exports = {\"version\":\"0.0.0\"};",
+      "type": "blob"
     }
   },
   "progenitor": {
     "url": "http://www.danielx.net/editor/"
   },
+  "version": "0.0.0",
   "entryPoint": "main",
   "repository": {
     "branch": "master",
