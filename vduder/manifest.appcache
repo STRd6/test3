@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# 1440897962235
+
+CACHE:
+index.html
+../vduder.json.js
+
+
+NETWORK:
+https://*
+http://*
+*
