@@ -1,0 +1,9 @@
+form#step2(submit=@step2)
+  h1 Almost There!
+
+  label
+    h3 Your Ticket to Whimsy
+    input(value=@token)
+
+  h3
+  button Go!

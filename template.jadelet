@@ -1,0 +1,19 @@
+form#install(submit=@step1)
+  h1 Installer Time
+
+  p
+    Welcome to the whimsy.space automated installer. This will guide you through 
+    setting up your very own whimsy.space. You need an email account and you need 
+    to choose your subdomain (ex. awesome.whimsy.space).
+
+  label
+    h3 Email
+    input(value=@email)
+
+  label
+    h3 Domain
+    input(value=@domain)
+    span .whimsy.space
+
+  h3
+  button Go!
