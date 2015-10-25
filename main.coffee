@@ -102,6 +102,7 @@ postmaster = Postmaster()
 
 music = new Audio
 music.autoplay = true
+music.loop = true
 music.volume = 0.0
 music.src = "https://s3.amazonaws.com/whimsyspace-databucket-1g3p6d9lcl6x1/danielx/data/K_fOqqpYYfEAJgWkUNlFmg5WZ3YmN5iPcEfVhN3emvs"
 document.head.appendChild music
@@ -224,7 +225,7 @@ show3 = ->
 
   url = "http://#{model.domain()}.whimsy.space"
   detect = ->
-    $.get url 
+    $.get url
     .done (r) ->
       cleanup()
       show4()
@@ -236,11 +237,11 @@ show3 = ->
   i1 = setInterval ->
     messageIndex += 1
     model.statusMessage messages.wrap(messageIndex)
-    
+
     detect()
-    
+
   , 60000
-  
+
   i2 = setInterval ->
     m = model.statusMessage()
     model.statusMessage m + "."
