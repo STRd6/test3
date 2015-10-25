@@ -1,0 +1,8 @@
+#step3
+  h1 Connecting the Intertubewebbernets
+
+  p We're plugging together the pipes to make your space available. It may take up to 15 minutes, please stand by.
+
+  - if @progressVisible()
+    h3= @statusMessage
+    progress(value=@progress)

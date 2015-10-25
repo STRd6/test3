@@ -1,17 +1,14 @@
 form#step2(submit=@step2)
-  h1 Almost There!
+  h1 Check your Email
 
-  p
-    Paste in the token you received in your email to publish your space! You'll
-    start with a copy of this one. When you arrive at your page you'll need to
-    paste in your token again to activate the auto-saving features.
+  p Paste in the token you received in your email to create your space!
 
   label
     h3 Your Ticket to Whimsy
     input(value=@token)
 
   h3
-  button(disabled=@progressVisible) Go!
+  button(disabled=@progressVisible) Continue
 
   - if @progressVisible()
     h3

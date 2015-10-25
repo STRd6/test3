@@ -1,0 +1,4 @@
+#step4
+  h1 It's done!
+
+  a(href="http://#{@domain()}.whimsy.space" target="_blank")= "#{@domain()}.whimsy.space"
