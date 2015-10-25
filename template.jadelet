@@ -16,4 +16,8 @@ form#install(submit=@step1)
     span .whimsy.space
 
   h3
-  button Go!
+  button(disabled=@progressVisible) Go!
+
+  - if @progressVisible()
+    h3
+    progress(value=@progress)

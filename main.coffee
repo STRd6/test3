@@ -86,6 +86,9 @@ model =
   email: Observable "duder@whimsy.space"
   domain: Observable "awesome"
   token: Observable ""
+  status: Observable ""
+  progressVisible: Observable false
+  progress: Observable 0
   step1: (e) ->
     e.preventDefault()
     register(@email(), @domain())
@@ -98,6 +101,8 @@ Template2 = require "./template2"
 document.body.appendChild(Template(model))
 
 register = (email, domain) ->
+  model.progressVisible(true)
+
   $.post "http://api.whimsy.space/register",
     email: email
     domain: domain
@@ -108,7 +113,7 @@ register = (email, domain) ->
   .fail (xhr, status) ->
     console.log 'fail', arguments
   .always ->
-    console.log 'always', arguments
+    model.progressVisible(false)
 
 publish = (token) ->
   fetchPolicy(token)
