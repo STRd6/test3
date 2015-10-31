@@ -78,6 +78,7 @@ indexPage = (pkg, mainScript) ->
     <html>
       <head>
         <meta charset="utf-8">
+        <link rel="icon" href="https://s3.amazonaws.com/whimsyspace-databucket-1g3p6d9lcl6x1/danielx/data/v_WkV4mc5sM0rLwKUgkMEAQJzCgDLKCNhJ7xIBUh4Hc">
         #{dependencyScripts(pkg.remoteDependencies)}
       </head>
       <body>
